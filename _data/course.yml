@@ -1,0 +1,544 @@
+title: "CE 40-817: Advanced Network Security"
+quarter: "Fall 2025"
+
+modules:
+  - mod_no: 1
+    mod_id: m01
+    name: "Foundations, Ethics and Threat Landscape"
+    focus: "Attacker models, Internet-scale risk, measurement ethics, course framing"
+    outcome: "Shared vocabulary and scope for the rest of the course"
+  - mod_no: 2
+    mod_id: m02
+    name: "Visibility and Telemetry in an Encrypted Internet"
+    focus: "Where signals live today (metadata, timing, endpoints) and limits under pervasive encryption"
+    outcome: "Reason about blind spots and what each data source can and cannot tell you"
+  - mod_no: 3
+    mod_id: m03
+    name: "Secure Transport Protocols: TLS 1.3, QUIC and PKI"
+    focus: "Handshake properties, forward secrecy, ECH, certificate ecosystem, operational pitfalls"
+    outcome: "Evaluate transport posture and typical misconfigurations"
+  - mod_no: 4
+    mod_id: m04
+    name: "Identity, Access and Zero-Trust Networking"
+    focus: "Network authentication and authorization, segmentation, device posture, VPN and zero-trust patterns"
+    outcome: "Design policies that fail safely and scale"
+  - mod_no: 5
+    mod_id: m05
+    name: "Name Resolution Security and Privacy"
+    focus: "DNS threat surface, DNSSEC basics, resolver models, DoH and DoT and SVCB and HTTPS trade-offs"
+    outcome: "Balance authenticity and privacy in naming"
+  - mod_no: 6
+    mod_id: m06
+    name: "Routing and Interdomain Security"
+    focus: "BGP fundamentals, hijacks and leaks, RPKI and ROV, operational best practices and failures"
+    outcome: "Analyze routing incidents and propose mitigations"
+  - mod_no: 7
+    mod_id: m07
+    name: "Data Plane Policy and Middleboxes under Encryption"
+    focus: "ACLs and segmentation, detection and response at L3 to L7, limits with QUIC, ECH, 0-RTT"
+    outcome: "Know when policy works and when it does not without breaking privacy"
+  - mod_no: 8
+    mod_id: m08
+    name: "Availability and DDoS Resilience"
+    focus: "Reflection and amplification, application layer attacks, anycast and CDN strategies, economics"
+    outcome: "Architect layered defenses and understand collateral-damage trade-offs"
+  - mod_no: 9
+    mod_id: m09
+    name: "Wireless and Short-Range Security including Jamming"
+    focus: "Wi-Fi and WPA3 pitfalls, BLE pairing and privacy, jamming models and mitigations"
+    outcome: "Assess RF risks and practical countermeasures"
+  - mod_no: 10
+    mod_id: m10
+    name: "Cellular and Mobile Core Security (LTE and 5G)"
+    focus: "Attach and auth flows, roaming and interconnect SS7 and Diameter, slicing and edge threats"
+    outcome: "Reason about mobile-core trust boundaries and policy points"
+  - mod_no: 11
+    mod_id: m11
+    name: "IoT and Edge Systems Security"
+    focus: "Identity and onboarding, constrained protocols MQTT and CoAP, segmentation and least privilege"
+    outcome: "Map IoT risk to containment and governance patterns"
+  - mod_no: 12
+    mod_id: m12
+    name: "Privacy, Anonymity and Future Internet Directions"
+    focus: "Traffic analysis and defenses, ethics of evaluation, path-aware networking and SCION ideas"
+    outcome: "Balance privacy with defense needs and see where the Internet is headed"
+
+weeks:
+  - label: "Week 1"
+    dates:
+      - { id: "d-0720", label: "7/20" }
+      - { id: "d-0722", label: "7/22" }
+  - label: "Week 2"
+    dates:
+      - { id: "d-0727", label: "7/27" }
+      - { id: "d-0729", label: "7/29" }
+  - label: "Week 3"
+    dates:
+      - { id: "d-0804", label: "8/04" }
+      - { id: "d-0806", label: "8/06" }
+  - label: "Week 4"
+    dates:
+      - { id: "d-0811", label: "8/11" }
+      - { id: "d-0813", label: "8/13" }
+  - label: "Week 5"
+    dates:
+      - { id: "d-0818", label: "8/18" }
+      - { id: "d-0820", label: "8/20" }
+  - label: "Week 6"
+    dates:
+      - { id: "d-0825", label: "8/25" }
+      - { id: "d-0827", label: "8/27" }
+  - label: "Week 7"
+    dates:
+      - { id: "d-0902", label: "9/02" }
+      - { id: "d-0904", label: "9/04" }
+  - label: "Week 8"
+    dates:
+      - { id: "d-0909", label: "9/09" }
+      - { id: "d-0911", label: "9/11" }
+  - label: "Week 9"
+    dates:
+      - { id: "d-0916", label: "9/16" }
+      - { id: "d-0918", label: "9/18" }
+  - label: "Week 10"
+    dates:
+      - { id: "d-0923", label: "9/23" }
+      - { id: "d-0925", label: "9/25" }
+  - label: "Week 11"
+    dates:
+      - { id: "d-0930", label: "9/30" }
+      - { id: "d-1002", label: "10/02" }
+  - label: "Week 12"
+    dates:
+      - { id: "d-1007", label: "10/07" }
+      - { id: "d-1009", label: "10/09" }
+  - label: "Final"
+    dates:
+      - { id: "d-1105", label: "11/05" }
+
+agenda:
+  - id: d-0720
+    dow: Sun
+    md: "7/20"
+    mod_no: 1
+    mod_id: m01
+    module: "Foundations, Ethics and Threat Landscape"
+    title: "Foundations and models"
+    topic:
+      - "Course introduction and logistics"
+      - "Internet trust boundaries and assets"
+      - "Attacker capability sets and goals"
+      - "Risk framing for confidentiality, integrity, availability and privacy"
+    ai_angel:
+      - "[SoK: A Pragmatic Assessment of Machine Learning for Network Intrusion Detection](https://arxiv.org/pdf/2305.00550.pdf)"
+    optional:
+      - "[RAPTOR: Routing Attacks on Privacy in Tor](https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-sun.pdf)"
+      - "[Inferring Internet Denial-of-Service Activity](https://cseweb.ucsd.edu/~savage/papers/UsenixSec01.pdf)"
+      - "[Spamalytics: An Empirical Analysis of Spam Marketing Conversion](https://www.icir.org/christian/publications/2008-ccs-spamalytics.pdf)"
+
+  - id: d-0722
+    dow: Tue
+    md: "7/22"
+    mod_no: 1
+    mod_id: m01
+    module: "Foundations, Ethics and Threat Landscape"
+    title: "Measurement and ethics"
+    topic:
+      - "Data sources across control plane, data plane and endpoints"
+      - "Consent, minimization and retention in practice"
+      - "Incident case studies and lessons learned"
+    ai_angel:
+      - "[Membership Inference Attacks Against Machine Learning Models](https://arxiv.org/pdf/1610.05820)"
+      - "[Deep Learning with Differential Privacy](https://arxiv.org/pdf/1607.00133)"
+    optional:
+      - "[Understanding the Ethical Frameworks of Internet Measurement Studies](https://www.ndss-symposium.org/wp-content/uploads/2023/02/ethics2023-239547-paper.pdf)"
+
+  - id: d-0727
+    dow: Sun
+    md: "7/27"
+    mod_no: 2
+    mod_id: m02
+    module: "Visibility and Telemetry in an Encrypted Internet"
+    title: "Signals and blind spots"
+    topic:
+      - "Residual visibility under encryption including metadata, timing and endpoints"
+      - "Endpoint versus network versus control-plane telemetry"
+      - "Privacy and policy constraints"
+    ai_angel:
+      - "[HyperVision: Detecting Unknown Encrypted Malicious Traffic in Real-Time](https://www.ndss-symposium.org/ndss-paper/hypervision-detecting-unknown-encrypted-malicious-traffic-in-real-time/)"
+    optional:
+      - "[Subverting Website Fingerprinting Defenses](https://www.usenix.org/system/files/usenixsecurity23-shen-meng.pdf)"
+      - "[Bro: A System for Detecting Network Intruders in Real-Time](https://www.usenix.org/legacy/publications/library/proceedings/sec98/full_papers/paxson/paxson.pdf)"
+
+  - id: d-0729
+    dow: Tue
+    md: "7/29"
+    mod_no: 2
+    mod_id: m02
+    module: "Visibility and Telemetry in an Encrypted Internet"
+    title: "Detection reasoning"
+    topic:
+      - "Signature versus anomaly analysis"
+      - "Handling false positives and false negatives"
+      - "Closing the loop from detection to response to hardening"
+    ai_angel:
+      - "[DeepLog: Anomaly Detection and Diagnosis from System Logs through Deep Learning](https://users.cs.utah.edu/~lifeifei/papers/deeplog.pdf)"
+      - "[xNIDS: Explaining DNN-based Network Intrusion Detection Systems](https://www.usenix.org/system/files/sec23summer_77-wei-prepub.pdf)"
+    optional:
+      - "[The Butterfly Effect in Intrusion Detection](https://dl.acm.org/doi/pdf/10.1145/319709.319722)"
+
+  - id: d-0804
+    dow: Sun
+    md: "8/04"
+    mod_no: 3
+    mod_id: m03
+    module: "Secure Transport Protocols: TLS 1.3, QUIC and PKI"
+    title: "Protocol properties"
+    topic:
+      - "TLS 1.3 handshake and forward secrecy"
+      - "Session resumption risks"
+      - "QUIC model and ECH implications"
+    ai_angel:
+      - "[Rosetta: Robust TLS Encrypted Traffic Classification](https://www.usenix.org/system/files/usenixsecurity23-xie.pdf)"
+      - "[Imperfect Forward Secrecy: How Diffie-Hellman Fails in Practice](https://weakdh.org/imperfect-forward-secrecy-ccs15.pdf)"
+    optional:
+      - "[The SSL and TLS Ecosystem in Practice](https://www.usenix.org/system/files/conference/usenixsecurity12/sec12-final91.pdf)"
+    milestone:
+      type: "release"
+      text: "Assignment 1 Released"
+      full: true
+
+  - id: d-0806
+    dow: Tue
+    md: "8/06"
+    mod_no: 3
+    mod_id: m03
+    module: "Secure Transport Protocols: TLS 1.3, QUIC and PKI"
+    title: "PKI and operations"
+    topic:
+      - "Certificate issuance, revocation and transparency"
+      - "Common failure modes and downgrade surfaces"
+      - "Transport layer PQ readiness"
+    ai_angel:
+      - "[Bamboozling Certificate Authorities with BGP](https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-birge-lee.pdf)"
+      - "[Let’s Encrypt: An Automated Certificate Authority at Internet Scale](https://www.abetterinternet.org/documents/letsencryptCCS2019.pdf)"
+    optional:
+      - "[Certificate Transparency in the Wild](https://dl.acm.org/doi/pdf/10.1145/3319535.3345653)"
+
+  - id: d-0811
+    dow: Sun
+    md: "8/11"
+    mod_no: 4
+    mod_id: m04
+    module: "Identity, Access and Zero-Trust Networking"
+    title: "Identity and policy"
+    topic:
+      - "User, device and service identity"
+      - "Authentication and authorization patterns"
+      - "Device posture and continuous verification"
+    ai_angel:
+      - "[A Comprehensive Formal Security Analysis of OAuth 2.0](https://publ.sec.uni-stuttgart.de/fettkuestersschmitz-ccs-2016.pdf)"
+    optional:
+      - "[TopoGuard: Security Analysis of Topology Discovery in Software-Defined Networking](https://people.engr.tamu.edu/guofei/paper/TopoGuard_NDSS15.pdf)"
+
+  - id: d-0813
+    dow: Tue
+    md: "8/13"
+    mod_no: 4
+    mod_id: m04
+    module: "Identity, Access and Zero-Trust Networking"
+    title: "Architectures"
+    topic:
+      - "VPN fit and alternatives"
+      - "Zero-trust access patterns and gateway placement"
+      - "Policy distribution, auditability, usability and performance"
+    ai_angel:
+      - "[TopoGuard: Security Analysis of Topology Discovery in Software-Defined Networking](https://people.engr.tamu.edu/guofei/paper/TopoGuard_NDSS15.pdf)"
+    optional:
+      - "[The Most Dangerous Code in the World: Validating SSL Certificates in Non-Browser Software](https://crypto.stanford.edu/~dabo/pubs/papers/ssl-client-bugs.pdf)"
+
+  - id: d-0818
+    dow: Sun
+    md: "8/18"
+    mod_no: 5
+    mod_id: m05
+    module: "Name Resolution Security and Privacy"
+    title: "Threats and defenses"
+    topic:
+      - "DNS spoofing, poisoning and cache issues"
+      - "DNSSEC chain of trust and validation"
+    ai_angel:
+      - "[SAD DNS: IP Fragmentation-based DNS Cache Poisoning](https://www.usenix.org/system/files/sec20fall_zhang-yu_paper_0.pdf)"
+      - "[MaginotDNS: Defending Against Malicious Delegations in DNS](https://www.usenix.org/system/files/usenixsecurity23-chi.pdf)"
+    optional:
+      - "[A Comprehensive Measurement Study of Domain Generating Malware](https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_plohmann.pdf)"
+
+  - id: d-0820
+    dow: Tue
+    md: "8/20"
+    mod_no: 5
+    mod_id: m05
+    module: "Name Resolution Security and Privacy"
+    title: "Modern DNS and privacy"
+    topic:
+      - "DoH and DoT trade-offs"
+      - "SVCB and HTTPS records and service discovery"
+      - "Resolver privacy and telemetry choices"
+    ai_angel:
+      - "[Encrypted DNS ⇒ Privacy? A Traffic Analysis Perspective](https://www.ndss-symposium.org/wp-content/uploads/2020/02/24301-paper.pdf)"
+    optional:
+      - "[Stealthy Hijacking of Active Domains through DNS Hosting Provider Infrastructures](https://www.xiaojingliao.com/uploads/9/7/0/2/97024238/ccs20-stalens.pdf)"
+    milestone:
+      type: "due"
+      text: "Assignment 1 Due 23:59 AoE"
+      full: true
+
+  - id: d-0825
+    dow: Sun
+    md: "8/25"
+    mod_no: 6
+    mod_id: m06
+    module: "Routing and Interdomain Security"
+    title: "Control plane"
+    topic:
+      - "BGP path selection and policy"
+      - "Hijacks and leaks taxonomy"
+      - "RPKI and Route Origin Validation"
+    ai_angel:
+      - "[ARTEMIS: Neutralizing BGP Hijacking within a Minute](https://www.caida.org/catalog/papers/2018_artemis/artemis.pdf)"
+      - "[Understanding Route Origin Validation (ROV) Deployment in the Real World and Why MANRS Action 1 Is Not Followed](https://www.ndss-symposium.org/wp-content/uploads/2024-214-paper.pdf)"
+    optional:
+      - "[On the Risk of BGP Route Leaks](https://www.ndss-symposium.org/wp-content/uploads/2017/09/02_4_3.pdf)"
+    milestone:
+      type: "release"
+      text: "Assignment 2 Released"
+      full: true
+
+  - id: d-0827
+    dow: Tue
+    md: "8/27"
+    mod_no: 6
+    mod_id: m06
+    module: "Routing and Interdomain Security"
+    title: "Operations and ecosystem"
+    topic:
+      - "Peering and transit relationships"
+      - "Filtering and monitoring practices"
+      - "Telemetry for integrity and recovery"
+    ai_angel:
+      - "[A Study of Prefix Hijacking and Interception in the Internet](https://people.mpi-sws.org/~francis/sigcomm07-interception.pdf)"
+    optional:
+      - "[BGPStream: a software framework for live and historical BGP data analysis](https://www.caida.org/catalog/papers/2015_bgpstream_tr/bgpstream-tr.pdf)"
+
+  - id: d-0902
+    dow: Sun
+    md: "9/02"
+    mod_no: 7
+    mod_id: m07
+    module: "Data Plane Policy and Middleboxes under Encryption"
+    title: "Policy and segmentation"
+    topic:
+      - "Segmentation and least privilege"
+      - "Access control across layers"
+      - "Ingress and egress exposure reduction"
+    ai_angel:
+      - "[Transparent Microsegmentation in Smart Home IoT Networks](https://www.usenix.org/system/files/hotedge20_paper_osman.pdf)"
+    optional:
+      - "[Effective Anomaly Detection with Scarce Training Data](https://www.ndss-symposium.org/wp-content/uploads/2017/09/robe.pdf)"
+
+  - id: d-0904
+    dow: Tue
+    md: "9/04"
+    mod_no: 7
+    mod_id: m07
+    module: "Data Plane Policy and Middleboxes under Encryption"
+    title: "Limits and evasion"
+    topic:
+      - "Encrypted protocols and middleboxes including QUIC and ECH"
+      - "Evasion via fragmentation, protocol nuance and traffic morphing"
+      - "Balancing efficacy, privacy and performance"
+    ai_angel:
+      - "[Traffic Morphing: An Efficient Defense Against Statistical Traffic Analysis](https://www.freehaven.net/anonbib/cache/morphing09.pdf)"
+    optional:
+      - "[Format-Transforming Encryption and Its Impact on Traffic Analysis](https://www.freehaven.net/anonbib/cache/ccs2013-fte.pdf)"
+
+  - id: d-0909
+    dow: Sun
+    md: "9/09"
+    mod_no: 8
+    mod_id: m08
+    module: "Availability and DDoS Resilience"
+    title: "Attack landscape"
+    topic:
+      - "Volumetric, reflection and amplification and state exhaustion"
+      - "Botnets and attack infrastructure"
+      - "Impact measurement and blast radius"
+    ai_angel:
+      - "[Understanding the Mirai Botnet](https://www.usenix.org/system/files/conference/usenixsecurity17/sec17-antonakakis.pdf)"
+    optional:
+      - "[Amplification Hell: Revisiting Network Protocols for DDoS Abuse](https://www.christian-rossow.de/publications/amplification-ndss2014.pdf)"
+
+  - id: d-0911
+    dow: Tue
+    md: "9/11"
+    mod_no: 8
+    mod_id: m08
+    module: "Availability and DDoS Resilience"
+    title: "Defense playbooks"
+    topic:
+      - "Anycast and CDN strategies"
+      - "Rate limiting and admission control"
+      - "RTBH and FlowSpec and SLAs"
+    ai_angel:
+      - "[MiddlePolice: Toward Enforcing Destination-Defined Policies in the Middle of the Internet](https://faculty.cc.gatech.edu/~mbailey/publications/ccs16_middlepolice.pdf)"
+    optional:
+      - "[SIBRA: Scalable Internet Bandwidth Reservation Architecture](https://www.ndss-symposium.org/wp-content/uploads/2017/09/sibra-scalable-internet-bandwidth-reservation-architecture.pdf)"
+    milestone:
+      type: "due"
+      text: "Assignment 2 Due 23:59 AoE"
+      full: true
+
+  - id: d-0916
+    dow: Sun
+    md: "9/16"
+    mod_no: 9
+    mod_id: m09
+    module: "Wireless and Short-Range Security including Jamming"
+    title: "Wi-Fi and BLE security"
+    topic:
+      - "WPA3 transition pitfalls and Dragonfly"
+      - "BLE pairing modes and privacy"
+      - "Management frames and roaming"
+    ai_angel:
+      - "[Dragonblood: Analyzing the Dragonfly Handshake of WPA3 and EAP-pwd](https://papers.mathyvanhoef.com/oakland2020.pdf)"
+      - "[BLESA: Spoofing Attacks against Reconnections in Bluetooth Low Energy](https://www.usenix.org/system/files/woot20-paper-wu-updated.pdf)"
+    optional:
+      - "[Release the Kraken: New KRACKs in the 802.11 Standard](https://papers.mathyvanhoef.com/ccs2018.pdf)"
+
+  - id: d-0918
+    dow: Tue
+    md: "9/18"
+    mod_no: 9
+    mod_id: m09
+    module: "Wireless and Short-Range Security including Jamming"
+    title: "Jamming and RF threats"
+    topic:
+      - "Barrage, reactive and protocol-aware jamming"
+      - "Detection and mitigation strategies"
+      - "Regulatory and safety considerations"
+    ai_angel:
+      - "[Security Analysis and Improvements for IEEE 802.11i](https://seclab.stanford.edu/pcl/mc/papers/NDSS05.pdf)"
+    optional:
+      - "[BIAS: Bluetooth Impersonation Attacks](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9152695)"
+    milestone:
+      type: "exam"
+      text: "Midterm"
+      full: true
+
+  - id: d-0923
+    dow: Sun
+    md: "9/23"
+    mod_no: 10
+    mod_id: m10
+    module: "Cellular and Mobile Core Security (LTE and 5G)"
+    title: "Architecture and trust boundaries"
+    topic:
+      - "Attach and paging flows and identifiers"
+      - "Roaming and interconnect risks from SS7 and Diameter to 5G"
+      - "Slice and edge threat considerations"
+    ai_angel:
+      - "[LTEInspector: A Systematic Approach for Adversarial Testing of 4G LTE](https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_02A-3_Hussain_paper.pdf)"
+    optional:
+      - "[FirmWire: Transparent Dynamic Analysis for Cellular Baseband Firmware](https://www.ndss-symposium.org/wp-content/uploads/2022-136-paper.pdf)"
+    milestone:
+      type: "release"
+      text: "Assignment 3 Released"
+      full: true
+
+  - id: d-0925
+    dow: Tue
+    md: "9/25"
+    mod_no: 10
+    mod_id: m10
+    module: "Cellular and Mobile Core Security (LTE and 5G)"
+    title: "Policy and assurance"
+    topic:
+      - "Slice isolation goals"
+      - "Exposure at UPF and control functions"
+      - "What to verify and where to verify it"
+    ai_angel:
+      - "[5GReasoner: A Property-Directed Security and Privacy Analysis Framework for 5G](https://syed-rafiul-hussain.github.io/wp-content/uploads/2019/10/5GReasoner.pdf)"
+    optional:
+      - "[A Formal Analysis of 5G Authentication](https://arxiv.org/pdf/1806.10360)"
+
+  - id: d-0930
+    dow: Sun
+    md: "9/30"
+    mod_no: 11
+    mod_id: m11
+    module: "IoT and Edge Systems Security"
+    title: "Systems and protocols"
+    topic:
+      - "Identity and onboarding at scale"
+      - "Update and attestation expectations"
+      - "MQTT and CoAP at a high level"
+    ai_angel:
+      - "[SoK: Security Evaluation of Home-Based IoT Deployments](https://alrawi.io/static/papers/alrawi_sok_sp19.pdf)"
+    optional:
+      - "[A Large-Scale Analysis of the Security of Embedded Firmwares](https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-costin.pdf)"
+
+  - id: d-1002
+    dow: Tue
+    md: "10/02"
+    mod_no: 11
+    mod_id: m11
+    module: "IoT and Edge Systems Security"
+    title: "Governance and risk"
+    topic:
+      - "Exposure reduction with brokers, gateways and data diodes"
+      - "Safety and security trade-offs"
+      - "Lifecycle risk from provisioning to decommissioning"
+    ai_angel:
+      - "[Kitsune: An Ensemble of Autoencoders for Online Network Intrusion Detection](https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_03A-3_Mirsky_paper.pdf)"
+    optional:
+      - "[Faster and Better: Detecting Vulnerabilities in Linux-based IoT Firmware with Optimized Reaching Definition Analysis](https://www.jianjunchen.com/p/hermescan.NDSS24.pdf)"
+
+  - id: d-1007
+    dow: Sun
+    md: "10/07"
+    mod_no: 12
+    mod_id: m12
+    module: "Privacy, Anonymity and Future Internet Directions"
+    title: "Privacy and anonymity"
+    topic:
+      - "Goals and limits of traffic analysis"
+      - "Threat models for anonymity systems"
+      - "Responsible evaluation and disclosure"
+    ai_angel:
+      - "[Deep Fingerprinting: Undermining Website Fingerprinting Defenses with Deep Learning](https://arxiv.org/pdf/1801.02265)"
+    optional:
+      - "[HORNET: High-speed Onion Routing at the Network Layer](https://netsec.ethz.ch/publications/papers/chen_hornet_ccs15.pdf)"
+
+  - id: d-1009
+    dow: Tue
+    md: "10/09"
+    mod_no: 12
+    mod_id: m12
+    module: "Privacy, Anonymity and Future Internet Directions"
+    title: "Where we are headed"
+    topic:
+      - "Path-aware networking and policy-rich routing"
+      - "Encrypted everywhere future across visibility, safety and governance"
+      - "Course synthesis and design principles"
+    ai_angel:
+      - "[SCION: Scalability, Control, and Isolation on Next-Generation Networks](https://www.ieee-security.org/TC/SP2011/PAPERS/2011/paper014.pdf)"
+    optional:
+      - "[The SCION Internet Architecture](https://netsec.ethz.ch/publications/papers/SCION-CACM.pdf)"
+
+  - id: d-1105
+    dow: Wed
+    md: "11/05"
+    milestone:
+      type: "exam"
+      text: "Final Exam"
+      full: true

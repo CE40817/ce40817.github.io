@@ -1,0 +1,11 @@
+<div class="schedule-table one-row">
+  {% for wk in site.data.course.weeks %}
+    <div class="col">
+      <div class="head">{{ wk.label }}</div>
+      {% assign d = wk.dates[0] %}
+      <div class="cell">
+        {% if d %}<a href="#{{ d.id }}">{{ d.label }}</a>{% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>

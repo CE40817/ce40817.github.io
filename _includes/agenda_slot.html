@@ -1,0 +1,27 @@
+{% assign a = include.item %}
+<div class="slot" id="{{ a.id }}">
+  <div class="datebox"><div class="dow">{{ a.dow }}</div><div class="md">{{ a.md }}</div></div>
+  <div class="content">
+    {% if a.title %}<strong>{{ a.title }}</strong>{% endif %}
+    {% for p in a.papers %}
+      <div class="paper">{{ p.authors }}. <a href="{{ p.link }}">{{ p.title }}</a>, <i>{{ p.venue }}</i>.</div>
+    {% endfor %}
+    {% if a.skim %}
+      <div class="paper"><em>Skim:</em></div>
+      <ul>
+        {% for s in a.skim %}
+          <li><a href="{{ s.link }}">{{ s.text }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% if a.optional and a.optional.size > 0 %}
+      <div class="paper" style="color:#6b7280">Optional papers:</div>
+      <ul>
+        {% for o in a.optional %}<li>{{ o }}</li>{% endfor %}
+      </ul>
+    {% endif %}
+    {% if a.slides %}
+      <div class="links"><a href="{{ a.slides | relative_url }}" target="_blank">Slides</a></div>
+    {% endif %}
+  </div>
+</div>

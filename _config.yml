@@ -1,5 +1,14 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: CE 40-817 Advanced Network Security
+description: Sharif University · Course hub
+
 theme: just-the-docs
-back_to_top: true
-back_to_top_text: "Back to top"
+
+url: "https://ce-40817.github.io"
+baseurl: ""
+
+color_scheme: brand
+just_the_docs:
+  search_enabled: true
+  nav_external_links:
+    - title: GitHub Org
+      url: https://github.com/CE-40817

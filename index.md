@@ -1,35 +1,150 @@
 ---
-title: Home
-layout: home
+layout: default
+title: Course Page
+nav_order: 1
 ---
 
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+# **CE 40-817: Advanced Network Security**
+### **Sharif University of Technology**
+## Fall 2025
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
+**Instructor**  
+Solmaz Salimi, <span class="email-obf">s[dot][salimi][at][sharif][dot][edu]</span>
 
-More specifically, the created site:
+**TA(s)**  
+Kasra Abdollahi,  <span class="email-obf">kasra[dot][abdolahi1379][at][sharif][dot][edu]</span>
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
+**Lectures**  
+Sunday/Tuesday 10:30 to 12:00, Room **402**
 
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+## Course Description
+<hr>
+- This course explores how to secure modern networks at Internet scale.
+- Each week features a short **Recent Trends and AI Angle** spotlight.
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
+## Course Schedule
+<hr>
 
-To get started with creating a site, simply:
+<div class="schedule-table">
+  {% for week in site.data.course.weeks %}
+    <div class="col">
+      <div class="head">{{ week.label }}</div>
+      {% for d in week.dates %}
+        <div class="cell"><a href="#{{ d.id }}">{{ d.label }}</a></div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+</div>
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+<hr>
+<div class="agenda">
+  {% for w in site.data.course.weeks %}
+    {% for d in w.dates %}
+      {% assign a = site.data.course.agenda | where: "id", d.id | first %}
+      {% if a %}
+        {% assign idx = a.mod_no | minus: 1 %}
+        {% assign hue = idx | times: 29 %}
+        {% assign h1  = hue | modulo: 360 %}
+        {% assign h2  = hue | plus: 35 | modulo: 360 %}
+      <div class="slot" id="{{ a.id }}">
+        <div class="leftcol">
+          <div class="datebox" style="--g1:hsl({{ h1 }},75%,58%);--g2:hsl({{ h2 }},75%,52%);">
+            <div class="dow">{{ a.dow }}</div>
+            <div class="md">{{ a.md }}</div>
+          </div>
+        </div>
+        <div>
+          <div class="topline">
+            {% if a.title %}
+              <a class="mod-badge"
+                 href="/asn/modules/#{{ a.mod_id }}"
+                 style="--g1:hsl({{ h1 }},75%,58%);--g2:hsl({{ h2 }},75%,52%);--num-color:hsl({{ h2 }},95%,85%);">
+                {{ a.module }}:
+              </a>
+              <strong class="title">{{ a.title }}</strong>
+              {% if a.slides %}
+                <a class="mod-badge"
+                   href="{{ a.slides }}"
+                   style="--g1:hsl({{ h1 }},75%,58%);--g2:hsl({{ h2 }},75%,52%);--num-color:hsl({{ h2 }},95%,85%);">
+                  [Slides]
+                </a>
+              {% else %}
+                <span class="mod-badge is-disabled"
+                      aria-disabled="true"
+                      style="--g1:hsl({{ h1 }},0%,70%);--g2:hsl({{ h2 }},0%,60%);--num-color:hsl({{ h2 }},0%,90%);">
+                  [TBU]
+                </span>
+              {% endif %}
+            {% endif %}
+          </div>
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
+          {% if a.milestone %}
+            <div class="callout {{ a.milestone.type }}{% if a.milestone.full %} full{% endif %}">
+              <span class="tag">
+                {% case a.milestone.type %}
+                  {% when "release" %} Assignment Release
+                  {% when "due"     %} Assignment Due
+                  {% when "exam"    %} Exam
+                  {% else           %} Note
+                {% endcase %}
+              </span>
+              <span class="text">{{ a.milestone.text }}</span>
+            </div>
+          {% endif %}
 
-----
+          <div class="meta">
+            {% if a.topic %}
+              <details class="row topic"{% if a.topic_open %} open{% endif %}>
+                <summary><span class="label">Topic</span></summary>
+                <div class="val">
+                  {% assign tjson = a.topic | jsonify %}
+                  {% if tjson contains '[' %}
+                    <ul class="tight">
+                      {% for t in a.topic %}
+                        <li>{{ t | markdownify | strip | replace: '<p>', '' | replace: '</p>', '' }}</li>
+                      {% endfor %}
+                    </ul>
+                  {% else %}
+                    {{ a.topic | markdownify }}
+                  {% endif %}
+                </div>
+              </details>
+            {% endif %}
 
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+            {% if a.ai_angel %}
+              <details class="row ai_angel"{% if a.ai_open %} open{% endif %}>
+                <summary><span class="label">AI Angle</span></summary>
+                <div class="val">
+                  {% assign aijson = a.ai_angel | jsonify %}
+                  {% if aijson contains '[' %}
+                    <ul class="tight">
+                      {% for x in a.ai_angel %}
+                        <li>{{ x | markdownify | strip | replace: '<p>', '' | replace: '</p>', '' }}</li>
+                      {% endfor %}
+                    </ul>
+                  {% else %}
+                    {{ a.ai_angel | markdownify }}
+                  {% endif %}
+                </div>
+              </details>
+            {% endif %}
 
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+            {% if a.optional and a.optional.size > 0 %}
+              <details class="row optional"{% if a.opt_open %} open{% endif %}>
+                <summary><span class="label">Optional Papers</span></summary>
+                <div class="val">
+                  <ol class="tight refs">
+                    {% for o in a.optional %}
+                      <li>{{ o | markdownify | strip | replace: '<p>', '' | replace: '</p>', '' }}</li>
+                    {% endfor %}
+                  </ol>
+                </div>
+              </details>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+</div>
