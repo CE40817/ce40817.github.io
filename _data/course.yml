@@ -144,7 +144,7 @@ agenda:
     mod_id: m01
     module: "Foundations, Ethics and Threat Landscape"
     title: "Measurement and ethics"
-    slides: :https://docs.google.com/presentation/d/1ffFF5DAcbkbnwbtp73gi-ZpDtPIqVZsJHumjI8IvKZM/edit?usp=sharing"
+    slides: "https://docs.google.com/presentation/d/1ffFF5DAcbkbnwbtp73gi-ZpDtPIqVZsJHumjI8IvKZM/edit?usp=sharing"
     topic:
       - "Data sources across control plane, data plane and endpoints"
       - "Consent, minimization and retention in practice"

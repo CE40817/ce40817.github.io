@@ -16,7 +16,8 @@ Kasra Abdollahi,  <span class="email-obf">kasra[dot][abdolahi1379][at][sharif][d
 
 **Lectures**  
 Sunday/Tuesday 10:30 to 12:00, Room **402**
-Join the Discord server for announcements: <a href="https://discord.gg/WgW5SeHQ" target="_blank" rel="noopener">discord.gg/WgW5SeHQ</a>
+
+Join the **Discord server** for announcements: <a href="https://discord.gg/WgW5SeHQ" target="_blank" rel="noopener">discord.gg/WgW5SeHQ</a>
 
 ## Course Description
 <hr>
