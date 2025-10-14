@@ -124,6 +124,7 @@ agenda:
     mod_id: m01
     module: "Foundations, Ethics and Threat Landscape"
     title: "Foundations and models"
+    slides: "https://docs.google.com/presentation/d/1gOHfEg9RkzPPPKEbeuOLKF_4vWO6Exy6X7YXeAobqMU/edit?usp=sharing"
     topic:
       - "Course introduction and logistics"
       - "Internet trust boundaries and assets"
@@ -143,6 +144,7 @@ agenda:
     mod_id: m01
     module: "Foundations, Ethics and Threat Landscape"
     title: "Measurement and ethics"
+    slides: :https://docs.google.com/presentation/d/1ffFF5DAcbkbnwbtp73gi-ZpDtPIqVZsJHumjI8IvKZM/edit?usp=sharing"
     topic:
       - "Data sources across control plane, data plane and endpoints"
       - "Consent, minimization and retention in practice"
