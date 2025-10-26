@@ -167,7 +167,7 @@ agenda:
       - "Endpoint versus network versus control-plane telemetry"
       - "Privacy and policy constraints"
     ai_angel:
-      - "[HyperVision: Detecting Unknown Encrypted Malicious Traffic in Real-Time](https://www.ndss-symposium.org/ndss-paper/hypervision-detecting-unknown-encrypted-malicious-traffic-in-real-time/)"
+      - "[HyperVision: Detecting Unknown Encrypted Malicious Traffic in Real-Time](https://www.ndss-symposium.org/wp-content/uploads/2023/02/ndss2023_s80_paper.pdf)"
     optional:
       - "[Subverting Website Fingerprinting Defenses](https://www.usenix.org/system/files/usenixsecurity23-shen-meng.pdf)"
       - "[Bro: A System for Detecting Network Intruders in Real-Time](https://www.usenix.org/legacy/publications/library/proceedings/sec98/full_papers/paxson/paxson.pdf)"
