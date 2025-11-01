@@ -208,10 +208,7 @@ agenda:
       - "[Imperfect Forward Secrecy: How Diffie-Hellman Fails in Practice](https://weakdh.org/imperfect-forward-secrecy-ccs15.pdf)"
     optional:
       - "[The SSL and TLS Ecosystem in Practice](https://www.usenix.org/system/files/conference/usenixsecurity12/sec12-final91.pdf)"
-    milestone:
-      type: "release"
-      text: "Assignment 1 Released"
-      full: true
+
 
   - id: d-0806
     dow: Tue
@@ -246,6 +243,10 @@ agenda:
       - "[A Comprehensive Formal Security Analysis of OAuth 2.0](https://publ.sec.uni-stuttgart.de/fettkuestersschmitz-ccs-2016.pdf)"
     optional:
       - "[TopoGuard: Security Analysis of Topology Discovery in Software-Defined Networking](https://people.engr.tamu.edu/guofei/paper/TopoGuard_NDSS15.pdf)"
+    milestone:
+      type: "release"
+      text: "Assignment 1 Released"
+      full: true
 
   - id: d-0813
     dow: Tue
@@ -294,10 +295,6 @@ agenda:
       - "[Encrypted DNS ⇒ Privacy? A Traffic Analysis Perspective](https://www.ndss-symposium.org/wp-content/uploads/2020/02/24301-paper.pdf)"
     optional:
       - "[Stealthy Hijacking of Active Domains through DNS Hosting Provider Infrastructures](https://www.xiaojingliao.com/uploads/9/7/0/2/97024238/ccs20-stalens.pdf)"
-    milestone:
-      type: "due"
-      text: "Assignment 1 Due 23:59 AoE"
-      full: true
 
   - id: d-0825
     dow: Sun
@@ -316,9 +313,10 @@ agenda:
     optional:
       - "[On the Risk of BGP Route Leaks](https://www.ndss-symposium.org/wp-content/uploads/2017/09/02_4_3.pdf)"
     milestone:
-      type: "release"
-      text: "Assignment 2 Released"
+      type: "due"
+      text: "Assignment 1 Due 23:59 AoE"
       full: true
+
 
   - id: d-0827
     dow: Tue
@@ -335,7 +333,11 @@ agenda:
       - "[A Study of Prefix Hijacking and Interception in the Internet](https://people.mpi-sws.org/~francis/sigcomm07-interception.pdf)"
     optional:
       - "[BGPStream: a software framework for live and historical BGP data analysis](https://www.caida.org/catalog/papers/2015_bgpstream_tr/bgpstream-tr.pdf)"
-
+    milestone:
+      type: "release"
+      text: "Assignment 2 Released"
+      full: true
+    
   - id: d-0902
     dow: Sun
     md: "9/02"
