@@ -11,7 +11,7 @@ Times are **23:59 AoE** unless noted otherwise.
 ## At-a-glance
 
 - **E1: Visibility & Secure Transport (Weeks 1–3)**
-  -~~Release:** Sun 8/04~~
+  - ~~Release:** Sun 8/04~~
   - **Release:** Sun **8/10**
   - ~~Due: Tue 8/20~~
   - **Due:** Tue **8/25**
