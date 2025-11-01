@@ -11,10 +11,10 @@ Times are **23:59 AoE** unless noted otherwise.
 ## At-a-glance
 
 - **E1: Visibility & Secure Transport (Weeks 1–3)**
-  - <span class="prev">**Release:** Sun **8/04**</span>
+  -~~Release:** Sun 8/04~~
   - **Release:** Sun **8/10**
-  - <span class="prev">**Due:** Tue **8/20**</span>
-  - **Due:** Tue **8/27**
+  - ~~Due: Tue 8/20~~
+  - **Due:** Tue **8/25**
   - **Exercise 1:** <https://github.com/CE40817/E1>
 
 - **E2: Network Plumbing Security (Weeks 4–6)**
