@@ -162,6 +162,7 @@ agenda:
     mod_id: m02
     module: "Visibility and Telemetry in an Encrypted Internet"
     title: "Signals and blind spots"
+    slides: "https://docs.google.com/presentation/d/1KDEhHMMRssS4HXvkvUBxUMq9dzOam1n6j0lm7vy-rXM/edit?usp=sharing"
     topic:
       - "Residual visibility under encryption including metadata, timing and endpoints"
       - "Endpoint versus network versus control-plane telemetry"
@@ -179,6 +180,7 @@ agenda:
     mod_id: m02
     module: "Visibility and Telemetry in an Encrypted Internet"
     title: "Detection reasoning"
+    sildes: "https://docs.google.com/presentation/d/1i4suw_Nuq1RIRM6dNHwhLjBRc9U416sEmf_vqZo54NM/edit?usp=sharing"
     topic:
       - "Signature versus anomaly analysis"
       - "Handling false positives and false negatives"
@@ -196,6 +198,7 @@ agenda:
     mod_id: m03
     module: "Secure Transport Protocols: TLS 1.3, QUIC and PKI"
     title: "Protocol properties"
+    slides: "https://docs.google.com/presentation/d/1Ymycv9ypIJd05LXQcOp9b0ihmcg_3yESFDZpjz0Ncfk/edit?usp=sharing"
     topic:
       - "TLS 1.3 handshake and forward secrecy"
       - "Session resumption risks"
@@ -217,6 +220,7 @@ agenda:
     mod_id: m03
     module: "Secure Transport Protocols: TLS 1.3, QUIC and PKI"
     title: "PKI and operations"
+    slides: "https://docs.google.com/presentation/d/1NhOh5Q8zG-uaNLsVi-hE6bQOWg1VwuiJpe-MvFl2j3I/edit?usp=sharing"
     topic:
       - "Certificate issuance, revocation and transparency"
       - "Common failure modes and downgrade surfaces"
