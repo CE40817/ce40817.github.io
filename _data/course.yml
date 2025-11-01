@@ -312,10 +312,7 @@ agenda:
       - "[Understanding Route Origin Validation (ROV) Deployment in the Real World and Why MANRS Action 1 Is Not Followed](https://www.ndss-symposium.org/wp-content/uploads/2024-214-paper.pdf)"
     optional:
       - "[On the Risk of BGP Route Leaks](https://www.ndss-symposium.org/wp-content/uploads/2017/09/02_4_3.pdf)"
-    milestone:
-      type: "due"
-      text: "Assignment 1 Due 23:59 AoE"
-      full: true
+
 
 
   - id: d-0827
@@ -337,7 +334,10 @@ agenda:
       type: "release"
       text: "Assignment 2 Released"
       full: true
-    
+    milestone:
+      type: "due"
+      text: "Assignment 1 Due 23:59 AoE"
+      full: true
   - id: d-0902
     dow: Sun
     md: "9/02"
