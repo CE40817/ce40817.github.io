@@ -14,7 +14,7 @@ Times are **23:59 AoE** unless noted otherwise.
   - ~~Release:** Sun 8/04~~
   - **Release:** Sun **8/11**
   - ~~Due: Tue 8/20~~
-  - **Due:** Tue **8/27**
+  - **Due:** Tue **8/25**
   - **Exercise 1:** <https://github.com/CE40817/E1>
 
 - **E2: Network Plumbing Security (Weeks 4–6)**
