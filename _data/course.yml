@@ -180,7 +180,7 @@ agenda:
     mod_id: m02
     module: "Visibility and Telemetry in an Encrypted Internet"
     title: "Detection reasoning"
-    sildes: "https://docs.google.com/presentation/d/1i4suw_Nuq1RIRM6dNHwhLjBRc9U416sEmf_vqZo54NM/edit?usp=sharing"
+    slides: "https://docs.google.com/presentation/d/1i4suw_Nuq1RIRM6dNHwhLjBRc9U416sEmf_vqZo54NM/edit?usp=sharing"
     topic:
       - "Signature versus anomaly analysis"
       - "Handling false positives and false negatives"
