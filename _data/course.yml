@@ -234,6 +234,7 @@ agenda:
     mod_no: 4
     mod_id: m04
     module: "Identity, Access and Zero-Trust Networking"
+    slides: "https://docs.google.com/presentation/d/1IrapTxeArrryxsRvEtfP-1EfAqIj2sJno1WX_xg7F3k/edit?usp=sharing"
     title: "Identity and policy"
     topic:
       - "User, device and service identity"
@@ -254,6 +255,7 @@ agenda:
     mod_no: 4
     mod_id: m04
     module: "Identity, Access and Zero-Trust Networking"
+    slides: "https://docs.google.com/presentation/d/1YMM3XtXYRtUAIlAsyTjkkhkq-FEEwckWXUJUN2pwVOw/edit?usp=sharing"
     title: "Architectures"
     topic:
       - "VPN fit and alternatives"
@@ -270,6 +272,7 @@ agenda:
     mod_no: 5
     mod_id: m05
     module: "Name Resolution Security and Privacy"
+    slides: "https://docs.google.com/presentation/d/1IyTrYNWqr5bc0WA6ZgU0Ul_PovhLh3BzpkpIrPTVRKk/edit?usp=sharing"
     title: "Threats and defenses"
     topic:
       - "DNS spoofing, poisoning and cache issues"
@@ -286,6 +289,7 @@ agenda:
     mod_no: 5
     mod_id: m05
     module: "Name Resolution Security and Privacy"
+    slides: "https://docs.google.com/presentation/d/1AP0lf1sEMo29iAncG69bF0F7lxRblP7n01m7urBsK9c/edit?usp=sharing"
     title: "Modern DNS and privacy"
     topic:
       - "DoH and DoT trade-offs"
@@ -302,6 +306,7 @@ agenda:
     mod_no: 6
     mod_id: m06
     module: "Routing and Interdomain Security"
+    slides: "https://docs.google.com/presentation/d/1u7XK1LRhFocuErdBKuoW7H_UgXuIiJeN56VnXS754fU/edit?usp=sharing"
     title: "Control plane"
     topic:
       - "BGP path selection and policy"
@@ -324,6 +329,7 @@ agenda:
     mod_no: 6
     mod_id: m06
     module: "Routing and Interdomain Security"
+    slides: "https://docs.google.com/presentation/d/1FgdQWDn9-7A4RnaEtkavFIdYyWT4cLSpgaIfT8dwreU/edit?usp=sharing"
     title: "Operations and ecosystem"
     topic:
       - "Peering and transit relationships"
@@ -344,6 +350,7 @@ agenda:
     mod_no: 7
     mod_id: m07
     module: "Data Plane Policy and Middleboxes under Encryption"
+    slides: "https://docs.google.com/presentation/d/1nFtXDTiGqRJ4ZevfODEaijsHo0gKRt2tXWD0eWm4Nnc/edit?usp=sharing"
     title: "Policy and segmentation"
     topic:
       - "Segmentation and least privilege"
@@ -360,6 +367,7 @@ agenda:
     mod_no: 7
     mod_id: m07
     module: "Data Plane Policy and Middleboxes under Encryption"
+    slides: "https://docs.google.com/presentation/d/1rCY8lNcIvO4Y0ZAzNTLXV1D_fydznBq6Q5UsoEccOXY/edit?usp=sharing"
     title: "Limits and evasion"
     topic:
       - "Encrypted protocols and middleboxes including QUIC and ECH"
@@ -376,6 +384,7 @@ agenda:
     mod_no: 8
     mod_id: m08
     module: "Availability and DDoS Resilience"
+    slides : "https://docs.google.com/presentation/d/1yMIV2lhk-14x4kv5VaES_qYoCrVcF6CDdcPi1SH6vOw/edit?usp=sharing"
     title: "Attack landscape"
     topic:
       - "Volumetric, reflection and amplification and state exhaustion"
