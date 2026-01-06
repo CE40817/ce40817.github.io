@@ -49,9 +49,9 @@ modules:
     outcome: "Assess RF risks and practical countermeasures"
   - mod_no: 10
     mod_id: m10
-    name: "Cellular and Mobile Core Security (LTE and 5G)"
-    focus: "Attach and auth flows, roaming and interconnect SS7 and Diameter, slicing and edge threats"
-    outcome: "Reason about mobile-core trust boundaries and policy points"
+    name: "Privacy, Anonymity and Future Internet Directions"
+    focus: "Traffic analysis and defenses, ethics of evaluation, path-aware networking and SCION ideas"
+    outcome: "Balance privacy with defense needs and see where the Internet is headed"
   - mod_no: 11
     mod_id: m11
     name: "IoT and Edge Systems Security"
@@ -59,10 +59,10 @@ modules:
     outcome: "Map IoT risk to containment and governance patterns"
   - mod_no: 12
     mod_id: m12
-    name: "Privacy, Anonymity and Future Internet Directions"
-    focus: "Traffic analysis and defenses, ethics of evaluation, path-aware networking and SCION ideas"
-    outcome: "Balance privacy with defense needs and see where the Internet is headed"
-
+    name: "Cellular and Mobile Core Security (LTE and 5G)"
+    focus: "Attach and auth flows, roaming and interconnect SS7 and Diameter, slicing and edge threats"
+    outcome: "Reason about mobile-core trust boundaries and policy points"
+    
 weeks:
   - label: "Week 1"
     dates:
@@ -477,7 +477,7 @@ agenda:
     mod_no: 10
     mod_id: m10
     module: "Privacy, Anonymity and Future Internet Directions"
-    slides: "https://docs.google.com/presentation/d/1MRplLSP1rUPNiWb-DSXAsonM-C8g2_ZxZOOHz-mreKc/edit?usp=sharing"
+    slides: "https://docs.google.com/presentation/d/1wt8-bCj1glNzojM_TOKHLcgEAy57c8LihpJQ4yidrRc/edit?usp=sharing"
     title: "Where we are headed"
     topic:
       - "Path-aware networking and policy-rich routing"
