@@ -21,9 +21,10 @@ Times are **23:59 AoE** unless noted otherwise.
   - **Release:** Sun **8/27**
   - **Due:** Thu **9/11**
 
-- **E3: Wireless, Cellular, IoT (Weeks 7–10)**
-  - **Release:** Tue **9/23**
-  - **Due:** Thu **10/09**
+- **E3: All other excluding IoT and Mobile Core (Weeks 7–10)**
+  - **Release:** Tue **10/16**
+  - **Due:** Thu **11/05*
+   **Exercise 2 and 3:** <https://github.com/CE40817/E2>
 
 <style>
 /* Robust overline that survives theme resets */

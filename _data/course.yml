@@ -401,6 +401,7 @@ agenda:
     mod_no: 8
     mod_id: m08
     module: "Availability and DDoS Resilience"
+    slides: "https://docs.google.com/presentation/d/1vmbTBMiq2WOyV7BnRFcW8057e4YZj1INl_nLopQucOQ/edit?usp=sharing"
     title: "Defense playbooks"
     topic:
       - "Anycast and CDN strategies"
@@ -420,6 +421,7 @@ agenda:
     md: "9/16"
     mod_no: 9
     mod_id: m09
+    slides: "https://docs.google.com/presentation/d/15FTIY9OC7gY3CvnS1ixmOVj-UEDNMG3FIv6GGEGnH44/edit?usp=sharing"
     module: "Wireless and Short-Range Security including Jamming"
     title: "Wi-Fi and BLE security"
     topic:
@@ -438,6 +440,7 @@ agenda:
     mod_no: 9
     mod_id: m09
     module: "Wireless and Short-Range Security including Jamming"
+    slides: "https://docs.google.com/presentation/d/15w-PvdZfU6v_jA8CPVxi0kT9FKqeE4W1A7pOJFlPc_M/edit?usp=sharing"
     title: "Jamming and RF threats"
     topic:
       - "Barrage, reactive and protocol-aware jamming"
@@ -451,13 +454,81 @@ agenda:
       type: "exam"
       text: "Midterm"
       full: true
+  - id: d-1007
+    dow: Sun
+    md: "10/07"
+    mod_no: 10
+    mod_id: m10
+    module: "Privacy, Anonymity and Future Internet Directions"
+    slides: "https://docs.google.com/presentation/d/1LnyW2zZ45NQ7xbeU7KDycGZ6QgBcwTlYRV1ZIzpHh3w/edit?usp=sharing"
+    title: "Privacy and anonymity"
+    topic:
+      - "Goals and limits of traffic analysis"
+      - "Threat models for anonymity systems"
+      - "Responsible evaluation and disclosure"
+    ai_angel:
+      - "[Deep Fingerprinting: Undermining Website Fingerprinting Defenses with Deep Learning](https://arxiv.org/pdf/1801.02265)"
+    optional:
+      - "[HORNET: High-speed Onion Routing at the Network Layer](https://netsec.ethz.ch/publications/papers/chen_hornet_ccs15.pdf)"
+
+  - id: d-1009
+    dow: Tue
+    md: "10/09"
+    mod_no: 10
+    mod_id: m10
+    module: "Privacy, Anonymity and Future Internet Directions"
+    slides: "https://docs.google.com/presentation/d/1MRplLSP1rUPNiWb-DSXAsonM-C8g2_ZxZOOHz-mreKc/edit?usp=sharing"
+    title: "Where we are headed"
+    topic:
+      - "Path-aware networking and policy-rich routing"
+      - "Encrypted everywhere future across visibility, safety and governance"
+      - "Course synthesis and design principles"
+    ai_angel:
+      - "[SCION: Scalability, Control, and Isolation on Next-Generation Networks](https://www.ieee-security.org/TC/SP2011/PAPERS/2011/paper014.pdf)"
+    optional:
+      - "[The SCION Internet Architecture](https://netsec.ethz.ch/publications/papers/SCION-CACM.pdf)"
+
+  - id: d-0930
+    dow: Sun
+    md: "9/30"
+    mod_no: 11
+    mod_id: m11
+    module: "IoT and Edge Systems Security"
+    slides: "https://docs.google.com/presentation/d/1oE3MW-oijedZlJzxXVXgekj7_vAiuwOUM2feUXBvvc4/edit?usp=sharing"
+    title: "Systems and protocols"
+    topic:
+      - "Identity and onboarding at scale"
+      - "Update and attestation expectations"
+      - "MQTT and CoAP at a high level"
+    ai_angel:
+      - "[SoK: Security Evaluation of Home-Based IoT Deployments](https://alrawi.io/static/papers/alrawi_sok_sp19.pdf)"
+    optional:
+      - "[A Large-Scale Analysis of the Security of Embedded Firmwares](https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-costin.pdf)"
+
+  - id: d-1002
+    dow: Tue
+    md: "10/02"
+    mod_no: 11
+    mod_id: m11
+    module: "IoT and Edge Systems Security"
+    slides: "https://docs.google.com/presentation/d/1gozZioUK-YJCpT8AI9epC6p9Vac2KI6TaWcIi_VIW-8/edit?usp=sharing"
+    title: "Governance and risk"
+    topic:
+      - "Exposure reduction with brokers, gateways and data diodes"
+      - "Safety and security trade-offs"
+      - "Lifecycle risk from provisioning to decommissioning"
+    ai_angel:
+      - "[Kitsune: An Ensemble of Autoencoders for Online Network Intrusion Detection](https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_03A-3_Mirsky_paper.pdf)"
+    optional:
+      - "[Faster and Better: Detecting Vulnerabilities in Linux-based IoT Firmware with Optimized Reaching Definition Analysis](https://www.jianjunchen.com/p/hermescan.NDSS24.pdf)"
 
   - id: d-0923
     dow: Sun
     md: "9/23"
-    mod_no: 10
-    mod_id: m10
+    mod_no: 12
+    mod_id: m12
     module: "Cellular and Mobile Core Security (LTE and 5G)"
+    slides: "https://docs.google.com/presentation/d/1vKHr4TlSNJvCi0zJI7U3D2WUXwRivmZ-9q7yakA1ZdU/edit?usp=sharing"
     title: "Architecture and trust boundaries"
     topic:
       - "Attach and paging flows and identifiers"
@@ -475,9 +546,10 @@ agenda:
   - id: d-0925
     dow: Tue
     md: "9/25"
-    mod_no: 10
-    mod_id: m10
+    mod_no: 12
+    mod_id: m12
     module: "Cellular and Mobile Core Security (LTE and 5G)"
+    slides: "https://docs.google.com/presentation/d/1iLYgLo4fl2MUL4uSI3D7KeEtesh7qCG1q9qMo0lOcyg/edit?usp=sharing"
     title: "Policy and assurance"
     topic:
       - "Slice isolation goals"
@@ -488,69 +560,6 @@ agenda:
     optional:
       - "[A Formal Analysis of 5G Authentication](https://arxiv.org/pdf/1806.10360)"
 
-  - id: d-0930
-    dow: Sun
-    md: "9/30"
-    mod_no: 11
-    mod_id: m11
-    module: "IoT and Edge Systems Security"
-    title: "Systems and protocols"
-    topic:
-      - "Identity and onboarding at scale"
-      - "Update and attestation expectations"
-      - "MQTT and CoAP at a high level"
-    ai_angel:
-      - "[SoK: Security Evaluation of Home-Based IoT Deployments](https://alrawi.io/static/papers/alrawi_sok_sp19.pdf)"
-    optional:
-      - "[A Large-Scale Analysis of the Security of Embedded Firmwares](https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-costin.pdf)"
-
-  - id: d-1002
-    dow: Tue
-    md: "10/02"
-    mod_no: 11
-    mod_id: m11
-    module: "IoT and Edge Systems Security"
-    title: "Governance and risk"
-    topic:
-      - "Exposure reduction with brokers, gateways and data diodes"
-      - "Safety and security trade-offs"
-      - "Lifecycle risk from provisioning to decommissioning"
-    ai_angel:
-      - "[Kitsune: An Ensemble of Autoencoders for Online Network Intrusion Detection](https://www.ndss-symposium.org/wp-content/uploads/2018/02/ndss2018_03A-3_Mirsky_paper.pdf)"
-    optional:
-      - "[Faster and Better: Detecting Vulnerabilities in Linux-based IoT Firmware with Optimized Reaching Definition Analysis](https://www.jianjunchen.com/p/hermescan.NDSS24.pdf)"
-
-  - id: d-1007
-    dow: Sun
-    md: "10/07"
-    mod_no: 12
-    mod_id: m12
-    module: "Privacy, Anonymity and Future Internet Directions"
-    title: "Privacy and anonymity"
-    topic:
-      - "Goals and limits of traffic analysis"
-      - "Threat models for anonymity systems"
-      - "Responsible evaluation and disclosure"
-    ai_angel:
-      - "[Deep Fingerprinting: Undermining Website Fingerprinting Defenses with Deep Learning](https://arxiv.org/pdf/1801.02265)"
-    optional:
-      - "[HORNET: High-speed Onion Routing at the Network Layer](https://netsec.ethz.ch/publications/papers/chen_hornet_ccs15.pdf)"
-
-  - id: d-1009
-    dow: Tue
-    md: "10/09"
-    mod_no: 12
-    mod_id: m12
-    module: "Privacy, Anonymity and Future Internet Directions"
-    title: "Where we are headed"
-    topic:
-      - "Path-aware networking and policy-rich routing"
-      - "Encrypted everywhere future across visibility, safety and governance"
-      - "Course synthesis and design principles"
-    ai_angel:
-      - "[SCION: Scalability, Control, and Isolation on Next-Generation Networks](https://www.ieee-security.org/TC/SP2011/PAPERS/2011/paper014.pdf)"
-    optional:
-      - "[The SCION Internet Architecture](https://netsec.ethz.ch/publications/papers/SCION-CACM.pdf)"
 
   - id: d-1105
     dow: Wed
